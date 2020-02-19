@@ -208,10 +208,6 @@ func resourceArmAutomationScheduleCreateUpdate(d *schema.ResourceData, meta inte
 
 	name := d.Get("name").(string)
 	resGroup := d.Get("resource_group_name").(string)
-<<<<<<< HEAD
-=======
-	//CustomizeDiff should ensure one of these two is set
->>>>>>> removed deprected schema entry.  Added timezone string validation
 	accountName := d.Get("automation_account_name").(string)
 
 	if features.ShouldResourcesBeImported() && d.IsNewResource() {
