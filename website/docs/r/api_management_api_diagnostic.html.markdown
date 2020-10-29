@@ -68,6 +68,7 @@ resource "azurerm_api_management_api_diagnostic" "example" {
   api_management_name      = azurerm_api_management.example.name
   api_name                 = azurerm_api_management_api.example.name
   api_management_logger_id = azurerm_api_management_logger.example.id
+  identifier               = "applicationinsights"
 }
 ```
 
